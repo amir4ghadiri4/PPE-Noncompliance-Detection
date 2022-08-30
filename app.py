@@ -1444,6 +1444,8 @@ if Uploaded_images:
             human_list.append(humanimg)
             FUZZY_human_coordinates_list.append(FUZZY_human_coordinates)
 
+        st.text(str(len(human_list)))   
+        
         if len(human_list) != 0 :
             all_human = human_list[0]
             all_human = np.expand_dims(all_human, axis=0)
